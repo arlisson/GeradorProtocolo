@@ -41,6 +41,11 @@ body {
   min-height: 100%;
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
 body {
   min-height: 100vh;
   font-family: Inter, "Segoe UI", Arial, sans-serif;
@@ -252,8 +257,7 @@ body.light-mode .chat-item.active {
 }
 
 .protocol-wrap {
-  flex: 1;
-  min-height: calc(100vh - 73px);
+  flex: 1 0 auto;
   padding: 24px;
   background: var(--bg-main);
 }
