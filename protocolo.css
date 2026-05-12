@@ -47,7 +47,8 @@ body {
   background-color: var(--bg-main);
   color: var(--text-primary);
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
@@ -75,7 +76,7 @@ textarea:focus-visible {
 .sidebar {
   width: 260px;
   min-width: 260px;
-  height: 100vh;
+  min-height: 100vh;
   padding: 20px 16px;
   background-color: var(--bg-sidebar);
   border-right: 1px solid var(--border-color);
@@ -252,8 +253,7 @@ body.light-mode .chat-item.active {
 
 .protocol-wrap {
   flex: 1;
-  min-height: 0;
-  overflow-y: auto;
+  min-height: calc(100vh - 73px);
   padding: 24px;
   background: var(--bg-main);
 }
